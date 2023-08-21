@@ -12,9 +12,6 @@ describe( "submitData()", () => {
   let xhr, requests
   beforeEach( function () {
     window.fetch = require( 'node-fetch' );
-
-
-
     chai.spy.on( window, 'fetch' );
     window.onerror = undefined;
 
